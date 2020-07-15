@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  CarWash
 //
-//  Created by Stepa on 14.07.2020.
-//  Copyright © 2020 Stepa Kozhevnikov. All rights reserved.
+//  Created by Иван on 14.07.2020.
+//  Copyright © 2020 Ivan Tomashevskiy. All rights reserved.
 //
 
 import UIKit
