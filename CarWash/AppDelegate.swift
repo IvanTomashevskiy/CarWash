@@ -12,9 +12,11 @@ import YandexMapKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    let MAPKIT_API_KEY = "3753dce9-6c4e-40da-a7a2-034b36e61cdc"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        YMKMapKit.setApiKey("3753dce9-6c4e-40da-a7a2-034b36e61cdc")
+        YMKMapKit.setApiKey(MAPKIT_API_KEY)
+        YMKMapKit.setLocale("en_US")
         return true
     }
 
