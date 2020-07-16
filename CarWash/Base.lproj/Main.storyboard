@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5dg-P2-sC9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -11,38 +11,23 @@
         <!--Карта-->
         <scene sceneID="bTy-D0-4hk">
             <objects>
-                <viewController id="8v2-H6-8q6" customClass="SecondViewController" customModule="CarWash" sceneMemberID="viewController">
+                <viewController id="8v2-H6-8q6" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NFE-5U-rpP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ThK-ac-0kZ" customClass="YMKMapView">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="ThK-ac-0kZ" firstAttribute="top" secondItem="LUk-rF-laR" secondAttribute="top" id="SsG-tP-N1w"/>
-                            <constraint firstItem="ThK-ac-0kZ" firstAttribute="leading" secondItem="LUk-rF-laR" secondAttribute="leading" id="Wl6-m3-3dn"/>
-                            <constraint firstItem="ThK-ac-0kZ" firstAttribute="bottom" secondItem="LUk-rF-laR" secondAttribute="bottom" id="lkG-E9-2Pi"/>
-                            <constraint firstItem="ThK-ac-0kZ" firstAttribute="trailing" secondItem="LUk-rF-laR" secondAttribute="trailing" id="scc-As-ddm"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="LUk-rF-laR"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Карта" selectedImage="map_icon" id="9Xt-WQ-aoc"/>
-                    <connections>
-                        <outlet property="mapView" destination="ThK-ac-0kZ" id="UsK-jH-Mp8"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4f7-T5-XRK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="602.89855072463774" y="253.79464285714283"/>
+            <point key="canvasLocation" x="604" y="254"/>
         </scene>
         <!--Главная-->
         <scene sceneID="P2Q-6x-4qk">
             <objects>
-                <viewController id="DAY-V9-j7U" customClass="ViewController" customModule="CarWash" sceneMemberID="viewController">
+                <viewController id="DAY-V9-j7U" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MHd-oc-qVs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,7 +38,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="opf-gI-0ME" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="602.89855072463774" y="-395.08928571428572"/>
+            <point key="canvasLocation" x="604" y="-395"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="aCR-5y-SCg">
