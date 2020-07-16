@@ -13,6 +13,11 @@
 		18A7D5AF24BE1041002323D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A7D5AD24BE1041002323D4 /* Main.storyboard */; };
 		18A7D5B124BE1042002323D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A7D5B024BE1042002323D4 /* Assets.xcassets */; };
 		18A7D5B424BE1042002323D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A7D5B224BE1042002323D4 /* LaunchScreen.storyboard */; };
+		18A7D5BE24BF0DB6002323D4 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A7D5BD24BF0DB6002323D4 /* InfoViewController.swift */; };
+		18A7D5C024BF448E002323D4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A7D5BF24BF448E002323D4 /* MainViewController.swift */; };
+		18A7D5C224BF530F002323D4 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A7D5C124BF530F002323D4 /* WeatherModel.swift */; };
+		18A7D5C424BF5351002323D4 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A7D5C324BF5351002323D4 /* WeatherData.swift */; };
+		18A7D5C624BF552C002323D4 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A7D5C524BF552C002323D4 /* WeatherManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		18A7D5B024BE1042002323D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18A7D5B324BE1042002323D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18A7D5B524BE1042002323D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18A7D5BD24BF0DB6002323D4 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		18A7D5BF24BF448E002323D4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		18A7D5C124BF530F002323D4 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		18A7D5C324BF5351002323D4 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		18A7D5C524BF552C002323D4 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +69,12 @@
 				18A7D5A724BE1041002323D4 /* AppDelegate.swift */,
 				18A7D5A924BE1041002323D4 /* SceneDelegate.swift */,
 				18A7D5AB24BE1041002323D4 /* ViewController.swift */,
+				18A7D5BF24BF448E002323D4 /* MainViewController.swift */,
+				18A7D5C124BF530F002323D4 /* WeatherModel.swift */,
+				18A7D5C324BF5351002323D4 /* WeatherData.swift */,
+				18A7D5C524BF552C002323D4 /* WeatherManager.swift */,
 				18A7D5AD24BE1041002323D4 /* Main.storyboard */,
+				18A7D5BD24BF0DB6002323D4 /* InfoViewController.swift */,
 				18A7D5B024BE1042002323D4 /* Assets.xcassets */,
 				18A7D5B224BE1042002323D4 /* LaunchScreen.storyboard */,
 				18A7D5B524BE1042002323D4 /* Info.plist */,
@@ -138,9 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A7D5C424BF5351002323D4 /* WeatherData.swift in Sources */,
 				18A7D5AC24BE1041002323D4 /* ViewController.swift in Sources */,
+				18A7D5C624BF552C002323D4 /* WeatherManager.swift in Sources */,
 				18A7D5A824BE1041002323D4 /* AppDelegate.swift in Sources */,
+				18A7D5BE24BF0DB6002323D4 /* InfoViewController.swift in Sources */,
 				18A7D5AA24BE1041002323D4 /* SceneDelegate.swift in Sources */,
+				18A7D5C224BF530F002323D4 /* WeatherModel.swift in Sources */,
+				18A7D5C024BF448E002323D4 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +307,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5BPPQSG4NA;
 				INFOPLIST_FILE = CarWash/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +326,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5BPPQSG4NA;
 				INFOPLIST_FILE = CarWash/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
