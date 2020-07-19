@@ -13,8 +13,13 @@
 		18A7D5AF24BE1041002323D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A7D5AD24BE1041002323D4 /* Main.storyboard */; };
 		18A7D5B124BE1042002323D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A7D5B024BE1042002323D4 /* Assets.xcassets */; };
 		18A7D5B424BE1042002323D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A7D5B224BE1042002323D4 /* LaunchScreen.storyboard */; };
-		19E4B99EFB344DFF08394564 /* Pods_CarWash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56C6189A6843C66EFB2B3AD2 /* Pods_CarWash.framework */; };
-		4D40370A24C0722200EE5C78 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D40370924C0722200EE5C78 /* FirstViewController.swift */; };
+		18A7D5BE24BF0DB6002323D4 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A7D5BD24BF0DB6002323D4 /* InfoViewController.swift */; };
+		18A7D5C024BF448E002323D4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A7D5BF24BF448E002323D4 /* MainViewController.swift */; };
+		18A7D5C224BF530F002323D4 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A7D5C124BF530F002323D4 /* WeatherModel.swift */; };
+		18A7D5C424BF5351002323D4 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A7D5C324BF5351002323D4 /* WeatherData.swift */; };
+		18A7D5C624BF552C002323D4 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A7D5C524BF552C002323D4 /* WeatherManager.swift */; };
+		4D7CEDC424C4DD0E00FD454E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7CEDC324C4DD0E00FD454E /* MapViewController.swift */; };
+		EB62CA316579DC3BF4034628 /* Pods_CarWash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B4B05B4E919F0669677E5B /* Pods_CarWash.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +31,15 @@
 		18A7D5B024BE1042002323D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18A7D5B324BE1042002323D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18A7D5B524BE1042002323D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D40370924C0722200EE5C78 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		56C6189A6843C66EFB2B3AD2 /* Pods_CarWash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarWash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		80764C2B0E10A9E66411D7F5 /* Pods-CarWash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarWash.debug.xcconfig"; path = "Target Support Files/Pods-CarWash/Pods-CarWash.debug.xcconfig"; sourceTree = "<group>"; };
-		F536430A000463DBBDB93F05 /* Pods-CarWash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarWash.release.xcconfig"; path = "Target Support Files/Pods-CarWash/Pods-CarWash.release.xcconfig"; sourceTree = "<group>"; };
+		18A7D5BD24BF0DB6002323D4 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		18A7D5BF24BF448E002323D4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		18A7D5C124BF530F002323D4 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		18A7D5C324BF5351002323D4 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		18A7D5C524BF552C002323D4 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		35B4B05B4E919F0669677E5B /* Pods_CarWash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarWash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D7CEDC324C4DD0E00FD454E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		6A85785E645CE5D1571422A0 /* Pods-CarWash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarWash.debug.xcconfig"; path = "Target Support Files/Pods-CarWash/Pods-CarWash.debug.xcconfig"; sourceTree = "<group>"; };
+		BCB38079DEEE9433104E6CEF /* Pods-CarWash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarWash.release.xcconfig"; path = "Target Support Files/Pods-CarWash/Pods-CarWash.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19E4B99EFB344DFF08394564 /* Pods_CarWash.framework in Frameworks */,
+				EB62CA316579DC3BF4034628 /* Pods_CarWash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,8 +59,8 @@
 			children = (
 				18A7D5A624BE1041002323D4 /* CarWash */,
 				18A7D5A524BE1041002323D4 /* Products */,
-				A1DBD35A6DED94498C99BC08 /* Pods */,
-				D527EFDB58140079A6B55F1D /* Frameworks */,
+				80955FEEC3A6161AF96FC19A /* Pods */,
+				BBC8C176C646E12A92E8B411 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,8 +78,13 @@
 				18A7D5A724BE1041002323D4 /* AppDelegate.swift */,
 				18A7D5A924BE1041002323D4 /* SceneDelegate.swift */,
 				18A7D5AB24BE1041002323D4 /* ViewController.swift */,
+				18A7D5BF24BF448E002323D4 /* MainViewController.swift */,
+				18A7D5C124BF530F002323D4 /* WeatherModel.swift */,
+				18A7D5C324BF5351002323D4 /* WeatherData.swift */,
+				18A7D5C524BF552C002323D4 /* WeatherManager.swift */,
 				18A7D5AD24BE1041002323D4 /* Main.storyboard */,
-				4D40370924C0722200EE5C78 /* FirstViewController.swift */,
+				4D7CEDC324C4DD0E00FD454E /* MapViewController.swift */,
+				18A7D5BD24BF0DB6002323D4 /* InfoViewController.swift */,
 				18A7D5B024BE1042002323D4 /* Assets.xcassets */,
 				18A7D5B224BE1042002323D4 /* LaunchScreen.storyboard */,
 				18A7D5B524BE1042002323D4 /* Info.plist */,
@@ -77,19 +92,19 @@
 			path = CarWash;
 			sourceTree = "<group>";
 		};
-		A1DBD35A6DED94498C99BC08 /* Pods */ = {
+		80955FEEC3A6161AF96FC19A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				80764C2B0E10A9E66411D7F5 /* Pods-CarWash.debug.xcconfig */,
-				F536430A000463DBBDB93F05 /* Pods-CarWash.release.xcconfig */,
+				6A85785E645CE5D1571422A0 /* Pods-CarWash.debug.xcconfig */,
+				BCB38079DEEE9433104E6CEF /* Pods-CarWash.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		D527EFDB58140079A6B55F1D /* Frameworks */ = {
+		BBC8C176C646E12A92E8B411 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				56C6189A6843C66EFB2B3AD2 /* Pods_CarWash.framework */,
+				35B4B05B4E919F0669677E5B /* Pods_CarWash.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -101,11 +116,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18A7D5B824BE1042002323D4 /* Build configuration list for PBXNativeTarget "CarWash" */;
 			buildPhases = (
-				580564253EB4488B333394A6 /* [CP] Check Pods Manifest.lock */,
+				09AE168AE20399702F84FD41 /* [CP] Check Pods Manifest.lock */,
 				18A7D5A024BE1041002323D4 /* Sources */,
 				18A7D5A124BE1041002323D4 /* Frameworks */,
 				18A7D5A224BE1041002323D4 /* Resources */,
-				95EAEB17AC8172872E2976B6 /* [CP] Copy Pods Resources */,
+				4A49077FE6251A9267CC8E64 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,7 +178,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		580564253EB4488B333394A6 /* [CP] Check Pods Manifest.lock */ = {
+		09AE168AE20399702F84FD41 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -185,7 +200,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		95EAEB17AC8172872E2976B6 /* [CP] Copy Pods Resources */ = {
+		4A49077FE6251A9267CC8E64 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -209,10 +224,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A7D5C424BF5351002323D4 /* WeatherData.swift in Sources */,
 				18A7D5AC24BE1041002323D4 /* ViewController.swift in Sources */,
+				18A7D5C624BF552C002323D4 /* WeatherManager.swift in Sources */,
 				18A7D5A824BE1041002323D4 /* AppDelegate.swift in Sources */,
+				4D7CEDC424C4DD0E00FD454E /* MapViewController.swift in Sources */,
+				18A7D5BE24BF0DB6002323D4 /* InfoViewController.swift in Sources */,
 				18A7D5AA24BE1041002323D4 /* SceneDelegate.swift in Sources */,
-				4D40370A24C0722200EE5C78 /* FirstViewController.swift in Sources */,
+				18A7D5C224BF530F002323D4 /* WeatherModel.swift in Sources */,
+				18A7D5C024BF448E002323D4 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,13 +374,13 @@
 		};
 		18A7D5B924BE1042002323D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80764C2B0E10A9E66411D7F5 /* Pods-CarWash.debug.xcconfig */;
+			baseConfigurationReference = 6A85785E645CE5D1571422A0 /* Pods-CarWash.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5K7V4MKXA2;
+				DEVELOPMENT_TEAM = 5BPPQSG4NA;
 				INFOPLIST_FILE = CarWash/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -374,13 +394,13 @@
 		};
 		18A7D5BA24BE1042002323D4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F536430A000463DBBDB93F05 /* Pods-CarWash.release.xcconfig */;
+			baseConfigurationReference = BCB38079DEEE9433104E6CEF /* Pods-CarWash.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5K7V4MKXA2;
+				DEVELOPMENT_TEAM = 5BPPQSG4NA;
 				INFOPLIST_FILE = CarWash/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
