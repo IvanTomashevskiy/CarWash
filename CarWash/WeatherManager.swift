@@ -23,7 +23,7 @@ extension WeatherDelegate {
 
 // MARK: - WeatherManager
 struct WeatherManager {
-    let weatherURL = "https://api.openweathermap.org/data/2.5/weather?appid=376ca749cf8c107d0bc12965b2ce021c&units=metric"
+    let weatherURL = "https://api.openweathermap.org/data/2.5/forecast?appid=376ca749cf8c107d0bc12965b2ce021c&units=metric&lang=ru"
     var delegate: WeatherDelegate?
     
     func fetchWeater(lan: CLLocationDegrees, lon: CLLocationDegrees) {
@@ -66,11 +66,13 @@ struct WeatherManager {
         
         do {
             let decodedData = try decoder.decode(WeatherData.self, from: weatherData)
-            let cityName = decodedData.name
-            let id = decodedData.weather[0].id
-            let temp = decodedData.main.temp
-            
-            return WeatherModel(conditionID: id, cityName: cityName, temperature: temp)
+            let cityName = decodedData.city.name
+            let id = decodedData.list[0].weather[0].id
+            let temp = decodedData.list[0].main.temp
+            let weatherMain = decodedData.list[0].weather[0].main
+            print(weatherMain)
+            return WeatherModel(conditionID: id, cityName: cityName, temperature: temp, weatherMain: weatherMain)
+           
         } catch let error {
             delegate?.didFailWithError(error: error)
             return nil

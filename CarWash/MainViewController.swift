@@ -11,7 +11,7 @@ import CoreLocation
 
 class MainViewController: UIViewController{
     
-    
+    @IBOutlet weak var mainLbl: UILabel!
     @IBOutlet weak var cityLbl: UILabel!
     @IBOutlet weak var tempLbl: UILabel!
     @IBOutlet weak var wetherIconImg: UIImageView!
@@ -28,6 +28,17 @@ class MainViewController: UIViewController{
             weatherManager.delegate = self
             searchField.delegate = self
         }
+    func addBoldText(fullString: NSString, boldPartsOfString: Array<NSString>, font: UIFont!, boldFont: UIFont!) -> NSAttributedString {
+        let nonBoldFontAttribute = [NSAttributedString.Key.font:font!]
+        let boldFontAttribute = [NSAttributedString.Key.font:boldFont!]
+        let boldString = NSMutableAttributedString(string: fullString as String, attributes:nonBoldFontAttribute)
+        for i in 0 ..< boldPartsOfString.count {
+            boldString.addAttributes(boldFontAttribute, range: fullString.range(of: boldPartsOfString[i] as String))
+        }
+        return boldString
+    }
+    let normalFont = UIFont(name: "Dosis-Medium", size: 18)
+    let boldSearchFont = UIFont(name: "Dosis-Bold", size: 18)
     
 }
     // MARK: - UITextFieldDelegate
@@ -56,6 +67,21 @@ class MainViewController: UIViewController{
         }
     }
 
+
+extension String {
+    func withBoldText(boldPartsOfString: Array<NSString>, font: UIFont!, boldFont: UIFont!) -> NSAttributedString {
+        let nonBoldFontAttribute = [NSAttributedString.Key.font:font!]
+        let boldFontAttribute = [NSAttributedString.Key.font:boldFont!]
+        let boldString = NSMutableAttributedString(string: self as String, attributes:nonBoldFontAttribute)
+        for i in 0 ..< boldPartsOfString.count {
+            boldString.addAttributes(boldFontAttribute, range: (self as NSString).range(of: boldPartsOfString[i] as String))
+        }
+        return boldString
+    }
+}
+
+
+
   // MARK: - WeatherDelegate
    extension MainViewController: WeatherDelegate {
    func didUpdateWeather(_ weatherManager: WeatherManager, weather: WeatherModel) {
@@ -63,6 +89,10 @@ class MainViewController: UIViewController{
                 self.tempLbl.text = "\(weather.temperatureString)ºC"
                 self.wetherIconImg.image = UIImage(systemName: weather.conditionName)
                 self.cityLbl.text = "Ваш город \(weather.cityName)"
+                let font = UIFont.systemFont(ofSize: 30, weight: UIFont.Weight.regular)
+                let boldFont = UIFont.systemFont(ofSize: 30, weight: UIFont.Weight.bold)
+                self.mainLbl.attributedText = weather.conditionMain.withBoldText(
+                    boldPartsOfString: ["мы не советуем вам мыть машину.", "мы советуем вам мыть машину."], font: font, boldFont: boldFont)
             }
         }
     }

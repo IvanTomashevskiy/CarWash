@@ -12,6 +12,7 @@ struct WeatherModel {
     let conditionID: Int
     let cityName: String
     let temperature: Double
+    let weatherMain: String
     
     var temperatureString: String {
         return String(format: "%.1f", temperature)
@@ -37,4 +38,19 @@ struct WeatherModel {
             return "cloud.fill"
         }
     }
+    
+    var conditionMain: String {
+           switch weatherMain {
+           case "Rain":
+            return "Сегодня будет дождь, мы не советуем вам мыть машину."
+            
+           case "Clear":
+            return "Сегодня прекрасная погода, мы советуем вам мыть машину."
+           case "Clouds":
+            return "Сегодня облачно, мы советуем вам мыть машину."
+                     
+           default:
+               return "Ошибка"
+           }
+       }
 }
